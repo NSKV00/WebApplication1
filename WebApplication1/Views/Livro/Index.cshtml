@@ -1,0 +1,20 @@
+﻿@model WebApplication1.Models.Livro
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Livro</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <h1><strong>Titulo:</strong> @Model.Titulo</strong></h1>
+        <p><strong>Autor:</strong> @Model.Autor</p>
+        <p><strong>Quantidade de Páginas:</strong> @Model.QPaginas</p>
+       @*  <p><strong>Curso:</strong> @Model.Curso</p> *@
+    </div>
+</body>
+</html>

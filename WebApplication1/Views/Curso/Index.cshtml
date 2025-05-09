@@ -1,0 +1,20 @@
+﻿@model WebApplication1.Models.Curso
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Curso</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Curso</h1>
+        <p><strong>Nome:</strong> @Model.Nome</p>
+        <p><strong>Duração:</strong> @Model.Duracao</p>
+        <p><strong>Instrutor:</strong> @Model.Instrutor</p>
+    </div>
+</body>
+</html>

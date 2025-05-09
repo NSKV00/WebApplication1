@@ -1,0 +1,21 @@
+﻿@model WebApplication1.Models.Filme
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Filme</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <h1><strong>Nome do Filme:</strong> @Model.NFilme</strong></h1>
+        <p><strong>Diretores:</strong> @Model.Diretores</p>
+        <p><strong>Ano de Lançamento:</strong> @Model.ALancamento</p>
+        <p><strong>Gênero:</strong> @Model.Genero</p>
+        @*  <p><strong>Curso:</strong> @Model.Curso</p> *@
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #1a0033;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    margin: auto;
+    padding: 40px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 20px hsla(0, 0%, 100%, 0.027);
+}
+
+    .content h1 {
+        font-size: 2.8rem;
+        color: #ffffff;
+        margin-bottom: 20px;
+        animation: fadeInUp 2s ease-out;
+    }
+
+    .content p {
+        font-size: 2.8rem;
+        color: #ffffff;
+        margin-bottom: 20px;
+        animation: fadeInUp 2s ease-out;
+    }
+
+    .content button {
+        padding: 12px 28px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+        border: 2px solid #fff;
+        border-radius: 30px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+        display-flex; 
+    }
+
+        .content button:hover {
+            background-color: #000000;
+            color: #3c0066;
+            transform: scale(1.05);
+        }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.btn2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btnT {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnT a {
+    text-decoration: none;
+    color: white;
+}
